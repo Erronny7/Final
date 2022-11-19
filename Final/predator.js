@@ -1,3 +1,5 @@
+let predator = require('./predator');
+
 class predator extends LivingCreature {
     constructor(x, y, index) {
         super(x, y, index);
