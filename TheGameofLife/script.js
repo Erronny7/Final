@@ -1,17 +1,10 @@
+var socket = io()
 
 
+side = 50;
 
 
-
-var side = 50;
-let grassArr = []
-let grassEaterArr = []
-let predatorArr = []
-let flowerArr = []
-let GrassAndFlowerEaterArr = []
-
-
-function draw() {
+function draww(matrix) {
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
 
@@ -46,3 +39,4 @@ function draw() {
 
     
 }
+socket.on ('display message', draww);
